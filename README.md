@@ -1,5 +1,7 @@
-# Correctif Quiz
+# Bouton Remettre à zéro
 
-Le Quiz était visible mais vide car l’ancien rendu du Blind test (`renderBlind`) tentait encore d’écrire dans l’ancienne zone `#songs`, supprimée lors de l’intégration du Blind Test Live. Cette erreur JavaScript interrompait `renderPlayer()` juste avant `renderQuiz()`.
+1. Exécuter `supabase_reset_game.sql` dans Supabase.
+2. Publier les fichiers GitHub Pages de cette archive.
+3. Connecté comme Nicolas, un bouton rouge **Remettre à zéro** est disponible dans la barre organisateur.
 
-Le correctif supprime cet appel obsolète. Aucun changement Supabase n’est nécessaire.
+Le reset supprime : progression missions, anecdotes et votes, propositions célébrités, votes quiz, réponses et scores Blind Test. Il conserve les joueurs, missions, célébrités, codes et le catalogue des 20 titres/artistes du Blind Test.
