@@ -1,7 +1,8 @@
-# Correctif Blind Test Live
+# Grand Jeu du Réveillon - Blind Test intégré
 
-Le bouton **Lancer le morceau** est corrigé. La variable de connexion Supabase nommée `URL` masquait l’API native `window.URL.createObjectURL()` utilisée pour lire le fichier audio local.
+Le Blind Test Live est maintenant directement dans l’onglet Blind test de `index.html`.
+- Joueur : réponses live dans l’onglet Blind test.
+- Nicolas : nouvel onglet Blind test dans le dashboard organisateur avec catalogue, fichiers audio, lancement, fermeture, révélation et réponses reçues.
+- `blindtest.html` ne sert plus que de redirection vers la page principale pour préserver les anciens favoris.
 
-Remplacez les fichiers GitHub Pages par ceux de cette archive. Aucun nouveau SQL Supabase n’est nécessaire.
-
-Test : connecter Nicolas / 2027, sélectionner un fichier audio sur la ligne 1, choisir le morceau 1 dans la régie puis cliquer sur Lancer le morceau.
+Aucun nouveau SQL n’est nécessaire si `supabase_blindtest_live.sql` a déjà été exécuté.
