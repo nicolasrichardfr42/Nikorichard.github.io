@@ -1,14 +1,8 @@
-# Barème final intégré
+# Qui a fait ça ? intégré
 
-Avant publication, exécuter `supabase_bareme_final.sql` dans Supabase.
-
-Barème :
-- Mission 1 : 1 pt
-- Mission 2 : 1 pt
-- Mission 3 : 2 pts
-- Célébrité : 5 pts sans indice, 2 pts après indice 2, 1 pt après indice 3
-- Blind test : 1 pt titre + 1 pt artiste, validés par Nicolas dans la régie
-- Qui a fait ça : 2 pts par bonne identification
-- Quiz : 1 pt au joueur ayant reçu le plus de votes pour chaque question, égalités incluses
-
-Le dashboard Nicolas calcule le classement général.
+1. Exécuter `supabase_qui_a_fait_ca_live.sql` dans Supabase.
+2. Publier ces fichiers GitHub Pages.
+3. Chaque joueur saisit son anecdote dans l’onglet Qui a fait ça ?.
+4. Nicolas ouvre l’onglet organisateur Qui a fait ça ?, choisit une anecdote et ouvre les votes.
+5. Les joueurs choisissent l’auteur depuis leur téléphone.
+6. Nicolas révèle la réponse. Chaque bonne réponse vaut 2 points et entre automatiquement dans le classement général.
