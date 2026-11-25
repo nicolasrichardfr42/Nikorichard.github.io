@@ -1,6 +1,11 @@
-# Correctif esthétique + Reset v2
+# Correctif sélection Quiz
 
-- Le texte « Application chargée. Connexion à Supabase au clic sur Entrer. » est supprimé.
-- Exécuter `supabase_reset_game_v2.sql` pour corriger le reset.
-- Les UPDATE/DELETE du reset utilisent maintenant des clauses WHERE explicites.
-- Le catalogue Blind Test et les pré-réponses Z’amours de Nicolas restent conservés.
+Le rafraîchissement automatique toutes les 2 secondes reconstruisait la liste de réponses. Tant que Supabase n’avait pas encore renvoyé `my_vote`, la sélection locale était remplacée par « Choisir... ».
+
+Ce correctif :
+- conserve la sélection locale pendant les rafraîchissements ;
+- désactive temporairement le champ pendant l’enregistrement ;
+- recharge le vote depuis Supabase juste après validation ;
+- affiche `Vote enregistré : Prénom`.
+
+Aucun SQL supplémentaire n’est nécessaire.
