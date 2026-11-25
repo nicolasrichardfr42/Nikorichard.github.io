@@ -1,9 +1,5 @@
-# Session 1 heure + déconnexion
+# Correctif Quiz
 
-Aucun SQL Supabase supplémentaire n’est nécessaire.
+Le Quiz était visible mais vide car l’ancien rendu du Blind test (`renderBlind`) tentait encore d’écrire dans l’ancienne zone `#songs`, supprimée lors de l’intégration du Blind Test Live. Cette erreur JavaScript interrompait `renderPlayer()` juste avant `renderQuiz()`.
 
-- Après une connexion réussie, prénom + code sont mémorisés localement pendant 1 heure.
-- Un rechargement de page ou une réouverture du site pendant cette heure reconnecte automatiquement le joueur.
-- Après 1 heure, la session locale expire et l’écran de connexion réapparaît.
-- Le bouton **Déconnexion** efface immédiatement la session sur l’appareil.
-- La session est propre à chaque navigateur/appareil.
+Le correctif supprime cet appel obsolète. Aucun changement Supabase n’est nécessaire.
