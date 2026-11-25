@@ -1,6 +1,6 @@
-# Quiz live masqué
+# Correctif esthétique + Reset v2
 
-1. Exécuter `supabase_quiz_live.sql`.
-2. Publier ces fichiers GitHub Pages.
-3. Les joueurs ne voient plus les 15 questions à l’avance.
-4. Nicolas dispose d’un onglet Quiz dans la vue organisateur : afficher/ouvrir, afficher les résultats, question suivante.
+- Le texte « Application chargée. Connexion à Supabase au clic sur Entrer. » est supprimé.
+- Exécuter `supabase_reset_game_v2.sql` pour corriger le reset.
+- Les UPDATE/DELETE du reset utilisent maintenant des clauses WHERE explicites.
+- Le catalogue Blind Test et les pré-réponses Z’amours de Nicolas restent conservés.
