@@ -1,9 +1,7 @@
-# Publication Blind Test Live
+# Correctif Blind Test Live
 
-1. Exécuter `supabase_blindtest_live.sql` dans Supabase SQL Editor.
-2. Remplacer les fichiers GitHub Pages par le contenu de cette archive.
-3. Nicolas ouvre `blindtest.html` sur le PC relié à l’enceinte.
-4. Les joueurs ouvrent le même lien depuis leur téléphone.
-5. Nicolas sélectionne 20 fichiers MP3/M4A locaux, renseigne titre et artiste, puis lance chaque morceau.
+Le bouton **Lancer le morceau** est corrigé. La variable de connexion Supabase nommée `URL` masquait l’API native `window.URL.createObjectURL()` utilisée pour lire le fichier audio local.
 
-Les fichiers audio restent sur le PC de Nicolas. Seules les métadonnées et réponses transitent par Supabase.
+Remplacez les fichiers GitHub Pages par ceux de cette archive. Aucun nouveau SQL Supabase n’est nécessaire.
+
+Test : connecter Nicolas / 2027, sélectionner un fichier audio sur la ligne 1, choisir le morceau 1 dans la régie puis cliquer sur Lancer le morceau.
