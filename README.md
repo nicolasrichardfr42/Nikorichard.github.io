@@ -1,8 +1,9 @@
-# Qui a fait ça ? intégré
+# Session 1 heure + déconnexion
 
-1. Exécuter `supabase_qui_a_fait_ca_live.sql` dans Supabase.
-2. Publier ces fichiers GitHub Pages.
-3. Chaque joueur saisit son anecdote dans l’onglet Qui a fait ça ?.
-4. Nicolas ouvre l’onglet organisateur Qui a fait ça ?, choisit une anecdote et ouvre les votes.
-5. Les joueurs choisissent l’auteur depuis leur téléphone.
-6. Nicolas révèle la réponse. Chaque bonne réponse vaut 2 points et entre automatiquement dans le classement général.
+Aucun SQL Supabase supplémentaire n’est nécessaire.
+
+- Après une connexion réussie, prénom + code sont mémorisés localement pendant 1 heure.
+- Un rechargement de page ou une réouverture du site pendant cette heure reconnecte automatiquement le joueur.
+- Après 1 heure, la session locale expire et l’écran de connexion réapparaît.
+- Le bouton **Déconnexion** efface immédiatement la session sur l’appareil.
+- La session est propre à chaque navigateur/appareil.
