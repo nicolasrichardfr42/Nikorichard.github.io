@@ -1,5 +1,6 @@
-# Correctif connexion après ajout Z’amours
+# Quiz live masqué
 
-Le blocage venait de deux contrôles du modal Reset (`cancelReset` et `confirmReset`) référencés par JavaScript mais absents du HTML dans la dernière construction. L’exception arrêtait le script avant que la connexion puisse être utilisée correctement.
-
-Cette version rétablit le modal Reset, conserve Z’amours + Jess/Nicolas + pré-réponses, et sécurise l’ancien rendu Blind Test. Aucun nouveau SQL n’est requis si l’installation Z’amours complète a déjà réussi.
+1. Exécuter `supabase_quiz_live.sql`.
+2. Publier ces fichiers GitHub Pages.
+3. Les joueurs ne voient plus les 15 questions à l’avance.
+4. Nicolas dispose d’un onglet Quiz dans la vue organisateur : afficher/ouvrir, afficher les résultats, question suivante.
