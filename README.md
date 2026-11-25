@@ -1,8 +1,5 @@
-# Z’amours - Jess + Nicolas
+# Correctif connexion après ajout Z’amours
 
-1. Exécuter `supabase_zamours_jess_nicolas.sql`.
-2. Publier les fichiers de cette archive.
-3. Le jeu comporte maintenant 5 duos : Elisa/Chris, Luc/Isa, Pauline/Guillaume, Phil/Caro, Jess/Nicolas.
-4. Nicolas reste hors classement général, mais une validation du duo Jess/Nicolas rapporte +2 à Jess.
-5. Dans la vue Nicolas, l’onglet **Mes réponses Z’amours** permet de pré-remplir les 12 réponses de Nicolas avant la soirée.
-6. Ces pré-réponses sont cachées pendant les votes et conservées lors d’un Reset du jeu.
+Le blocage venait de deux contrôles du modal Reset (`cancelReset` et `confirmReset`) référencés par JavaScript mais absents du HTML dans la dernière construction. L’exception arrêtait le script avant que la connexion puisse être utilisée correctement.
+
+Cette version rétablit le modal Reset, conserve Z’amours + Jess/Nicolas + pré-réponses, et sécurise l’ancien rendu Blind Test. Aucun nouveau SQL n’est requis si l’installation Z’amours complète a déjà réussi.
