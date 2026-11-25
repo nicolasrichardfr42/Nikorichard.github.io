@@ -1,5 +1,9 @@
-# Grand Jeu du Réveillon - version sans CDN
+# Publication Blind Test Live
 
-Déposer les quatre fichiers à la racine du dépôt GitHub Pages. Cette version appelle directement l’API REST Supabase et ne dépend plus de jsDelivr.
+1. Exécuter `supabase_blindtest_live.sql` dans Supabase SQL Editor.
+2. Remplacer les fichiers GitHub Pages par le contenu de cette archive.
+3. Nicolas ouvre `blindtest.html` sur le PC relié à l’enceinte.
+4. Les joueurs ouvrent le même lien depuis leur téléphone.
+5. Nicolas sélectionne 20 fichiers MP3/M4A locaux, renseigne titre et artiste, puis lance chaque morceau.
 
-Après le commit, ouvrir l’URL avec `?v=4` en navigation privée.
+Les fichiers audio restent sur le PC de Nicolas. Seules les métadonnées et réponses transitent par Supabase.
